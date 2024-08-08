@@ -1,7 +1,7 @@
-package game.blackjack;
+package game;
 
-public class CommandReceivingServerOperation extends Operation {
-    public CommandReceivingServerOperation(Room room) {
+public class CommandReceivingClientOperation extends CommandOperation {
+    public ReceivingClient(Room room) {
         super(room);
     }
 

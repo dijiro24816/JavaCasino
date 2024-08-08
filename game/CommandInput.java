@@ -9,5 +9,9 @@ public abstract class CommandInput {
     public abstract int getInt() throws IOException;
     public abstract long getLong() throws IOException;
     public abstract short getShort() throws IOException;
-    public abstract String getToken() throws IOException;
+
+    private String name = null;
+    private int id = 0;
+    private abstract String getName() throws IOException;
+    public abstract Command getCommand() throws IOException;
 }

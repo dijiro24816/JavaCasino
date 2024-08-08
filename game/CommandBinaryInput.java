@@ -36,9 +36,7 @@ public class CommandBinaryInput extends CommandInput {
         return data.readShort();
     }
     @Override
-    public String getToken() throws IOException {
-        return null;
-    }
+    public String getName() throws IOException {}
 
     public static void main(String[] args) throws IOException {
         ByteArrayOutputStream byteArr = new ByteArrayOutputStream();

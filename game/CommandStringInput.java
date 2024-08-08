@@ -35,8 +35,11 @@ public class CommandStringInput extends CommandInput {
         return scanner.nextShort();
     }
     @Override
-    public String getToken() throws IOException {
-        return scanner.next();
+    private String getName() throws IOException {
+        if (name != null) {
+            return name = scanner.next();
+        }
+        return name;
     }
 
     public static void main(String[] args) throws IOException {
